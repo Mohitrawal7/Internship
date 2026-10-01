@@ -7,15 +7,34 @@
 </head>
 <body>
     
-    <div id="test">
+    <!-- <div id="test">
         this is my first website
+    </div> -->
+    <div>
+
+        <p id="table"></p>
+        <p id="result"></p>
     </div>
 
 </body>
 <script>
-    
-    const testDiv = document.getElementById('test');
-    alert(testDiv.innerHTML);
+    const table = document.getElementById("table");
+    const result = document.getElementById("result");
+    let n =570;
+    let html = "";
+    let count = 0;
+    for (let i = 100; i <= n; i++) {
+        if(i%2!==0){
+            html += i ;
+            count++;
+            
+        }
+        html += " ";
+        
+    }
+    table.innerHTML = html;
+    result.innerHTML = "count: " + count;
+
 </script>
 
 </html>
